@@ -4,12 +4,12 @@
 import json
 import os
 import sys
-from nlp100.nlp20 import JaWiki
+from nlp20 import JaWiki
 
 
 def get_category_lines(text):
     return list(filter(lambda x: x.startswith("[[Category"), text.split()))
-    # return text.split()
+
 
 if __name__ == '__main__':
     print(get_category_lines(JaWiki.get_article("イギリス")))

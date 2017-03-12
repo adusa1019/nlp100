@@ -2,7 +2,7 @@
 # coding=utf-8
 
 import re
-from nlp100.nlp20 import JaWiki
+from nlp20 import JaWiki
 
 
 def get_categories(text):
